@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I Love You Devi Mei</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>Miss Crewet</h1>
+        <span>Adindaku Tersayang</span>
+        <input type="text" placeholder="Devi Meilani" />
+        <input type="email" placeholder="05-Mei-1998" />
+        <button>I♥️U</button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Mr. Hacker</h1>
+        <span>You're Sunshine</span>
+        <input type="email" placeholder="Abraham Yusuf" />
+        <input type="password" placeholder="11-Feb-1999" />
+        <button>I♥️U</button>
+        
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h3>05-Mei-2016</h3>
+          <p>Aku Hadir Bukan Tanpa Sebab, Tuhan Menginginkan Kamu Bahagia</p>
+          <button class="ghost" id="signIn">Kamu</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h3>05-Mei-2020</h3>
+          <p>Kamu Hadir Lebih Dari Sekedar Indah, Tuhan Tau Yang Ku Mau</p>
+          <button class="ghost" id="signUp">Aku</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+     const signUpButton = document.getElementById('signUp');
+     const signInButton = document.getElementById('signIn');
+     const container = document.getElementById('container');
+     signUpButton.addEventListener('click', () => {
+     container.classList.add("right-panel-active");
+     });
+     signInButton.addEventListener('click', () => {
+     container.classList.remove("right-panel-active");
+     });
+  </script>
+</body>
+
+</html>
